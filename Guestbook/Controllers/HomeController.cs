@@ -13,6 +13,11 @@ namespace Guestbook.Controllers
             return View();
         }
 
+        public ActionResult Color(string fontColor)
+            { 
+                return View();
+            }
+
         public ActionResult About()
         {
             ViewBag.Message = "Valt hier niet veel te zeggen eigenlijk.";

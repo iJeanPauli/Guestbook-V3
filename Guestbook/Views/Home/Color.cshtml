@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Color";
+    string fontColor = Request.Form["fontColor"];
+}
+<div>
+    <h2>Color change</h2>
+    <font color='@fontColor'>Heey deze tekstkleur kan je aanpassen!!</font>
+</div>
+</br>
+<div>
+    Font kleur: 
+    <form action="Color" method="POST" id="fontColor">
+        <select name="fontColor" form="fontColor">
+            <option value="ff0000">Rood</option>
+            <option value="00ff00">Groen</option>
+            <option value="0000ff">Blauw</option>
+        </select>
+        <input type="submit" value="Font">
+    </form>
+</div>
+
