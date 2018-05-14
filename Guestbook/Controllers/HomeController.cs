@@ -13,7 +13,12 @@ namespace Guestbook.Controllers
             return View();
         }
 
-        public ActionResult Color(string fontColor)
+        public ActionResult Color()
+            { 
+                return View();
+            }
+
+        public ActionResult Map()
             { 
                 return View();
             }
